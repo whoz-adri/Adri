@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Login</title>
+    <style>
+        body {
+            background: linear-gradient(to bottom, rgb(4, 4, 102), rgb(92, 3, 92), rgb(2, 165, 165));
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: comic sans ms;
+            color: white;
+            
+        }
+        .container {
+            padding: 30px;
+            width: 250px;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0px 10px 10px white;
+            background: linear-gradient(to bottom, rgb(4, 4, 102), rgb(92, 3, 92), rgb(2, 165, 165));
+        }
+        input {
+            width: 90%;
+            padding: 8px;
+            margin: 10px;
+            border-radius: 20px;
+            color: white;
+            background: linear-gradient(to right, blue, purple);
+        }
+        input:hover {
+            background: linear-gradient(to bottom, rgb(4, 4, 102), rgb(92, 3, 92), rgb(2, 165, 165));
+            transition: ease-in 1.5;
+        }
+        button {
+            padding: 10px 30px;
+            margin: 10px;
+            cursor: pointer;
+            color: blue;
+            transition: ease-in-out 0.5s;
+            font-family: comic sans ms;
+        }
+        button:hover {
+            background: linear-gradient(to right, blue, purple);
+            color: white;
+            transform: scale(1.1);
+            font-family: comic sans ms;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Login Form</h1>
+
+        <input type="text" id="un" name="un" placeholder="Username" required>
+        <input type="text" name="pass" id="pass" placeholder="Password" required>
+
+        <button onclick="logIn()">Log In!</button>
+
+        <p id="message"></p>
+    </div>
+    <script>
+        function logIn() {
+            let username = document.getElementById("un").value;
+            let password = document.getElementById("pass").value;
+
+            if (username === "admin" && password === "1234"){
+                document.getElementById("message").textContent =
+                "Log In successful";
+            } else if (username === "" && password === ""){
+                document.getElementById("message").textContent =
+                "Put your username and password!";
+            } else {
+                document.getElementById("message").textContent =
+                "Invalid username or password";
+            }
+        }
+    </script>
+</body>
+</html>
