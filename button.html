@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button</title>
+    <style>
+        body {
+            background: linear-gradient(to right, black, purple);
+            font-family: 'Times New Roman', Times, serif;
+            animation: fadeIn 1s ease-in;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        .button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            border-radius: 8px;
+            
+        }
+        .button button{
+            transition: ease-out 0.5s;
+        }
+        button:hover {
+            background: radial-gradient(black, purple);
+            border: 3px solid black;
+            border-radius: 8px;
+            color: white;
+            transform: scale(1.2);
+            box-shadow: 0px 0px 10px purple, 0px 0px 10px white;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="button">    
+        <button onclick="goTo()">Click Here My Website!</button>
+    </div>
+    <script>
+        function goTo() {
+            window.location.href = "profile.html";
+        }
+    </script>
+</body>
+</html>
