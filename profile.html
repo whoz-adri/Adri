@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="profile.css">
+    <title>My Profile</title>
+    <style>
+        #skills {
+            text-align: center;
+            margin-top: 10px;
+        }
+        #contact {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="goBack()">Back</button>
+    <nav class="navbar">
+        <a href="#profile">Profile</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <div id="profile" class="profile">
+        <img src="dri.jpg" alt="">
+        <div class="details">
+        <p>Name: Adrian C. Peradilla</p>
+        <p>Address: Castillo, Padre Garcia Batangas</p>
+        <p>Birthdate: 08-15-2006</p>
+        </div>
+    </div>
+
+    <div id="about" class="about">
+        <h1>About Me</h1>
+        <div class="about1">
+            <h3>Habits</h3>
+            <ul>
+                <li>Playing Online Games</li>
+                <li>Study</li>
+                <li>Coffee</li>
+                <li>Listening Music</li>
+            </ul>
+        </div>
+        <div class="about1">
+            <h3>Educational Attainment</h3>
+            <ul>
+                <li>Elementary: Subukin Elementary School (2012-2019)</li>
+                <li>Junior High School: Nagsaulay Intergrated National High School(2019-2023)</li>
+                <li>Senior High School: San Juan Institute of Technology(2023-2025,TVL-ICT)</li>
+                <li>College: Padre Garcia Polytechnic College (2025-Present, Bachelor of Science in Computer Science)</li>
+            </ul>
+        </div>
+        <div class="about1">
+            <h3>Objectives</h3>
+            <ul>
+                <li>To learn</li>
+                <li>To develop</li>
+                <li>To apply itself</li>
+            </ul>
+        </div>
+    </div>
+    <div id="skills">
+        <h2>Skills</h2>
+    </div>
+    <div id="skills" class="skills"> 
+        
+        <div class="skill">
+            <h2>HTML</h2>
+        </div>
+        <div class="skill">
+            <h2>CSS</h2>
+        </div>
+        <div class="skill">
+            <h2>JavaScript</h2>
+        </div>
+        <div class="skill">
+            <h2>C#</h2>
+        </div>
+        <div class="skill">
+            <h2>Python</h2>
+        </div>
+        <div class="skill">
+            <h2>SQL</h2>
+        </div>
+    </div>
+    <div id="contact">
+        <h3>Contact</h3>
+    </div>
+    <div id="contact" class="contact">
+        <div class="number">
+            <p>09932477639</p>
+        </div>
+        <div class="email">
+            <p>aperadilla9@gmail.com</p>
+        </div>
+    </div>
+    
+    <footer class="footer"><p>&copy; Adrian 2026, All Rights Reserved</p></footer>
+
+    <script>
+        function goBack() {
+            window.location.href = "button.html";
+        }
+    </script>
+</body>
+</html>

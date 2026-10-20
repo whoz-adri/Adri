@@ -1,0 +1,177 @@
+* {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+}
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background: linear-gradient(to right, purple, darkblue, black);
+    color: white;
+    animation: fadeIn 1s ease-in;
+
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+button {
+    margin: 10px;
+    border: 3px solid black;
+    border-radius: 8px;
+    transition: ease-out 0.5s;
+}
+button:hover {
+    background: linear-gradient(to right, purple, black);
+    color: white;
+    transform: scale(1.2);
+    box-shadow: 0px 0px 20px white, 0px 0px 10px purple;
+}
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    border: 3px solid black;
+    height: auto;
+    border-radius: 8px;
+    position: sticky;
+    z-index: 1000;
+    top: 0;
+    background: radial-gradient( purple, black);
+    box-shadow: 0px 0px 5px white, 0px 0px 5px cyan;
+    animation: fadeIn 1s ease-in;
+}
+.navbar a {
+    border: 3px solid black;
+    border-radius: 8px;
+    text-decoration: none;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    color: rgb(0, 0, 0);
+    background-color: white;
+}
+a:hover {
+     background: linear-gradient(to bottom, purple, black);
+     color: rgb(254, 252, 255);
+     box-shadow: 0px 0px 5px white, 0px 0px 5px cyan;
+     text-decoration: underline;
+}
+.profile {
+    border: 3px solid black;
+    margin-top: 20px;
+    padding: 30px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(purple, black);
+    box-shadow: 0px 0px 5px white, 0px 0px 5px cyan;
+}
+.details {
+    background: radial-gradient(purple, black);
+    box-shadow: 0px 0px 5px white, 0px 0px 5px cyan;
+    border: 3px solid black;
+    border-radius: 8px;
+    margin: 10px;
+    
+}
+.profile img {
+    width: 150px;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0px 0px 5px white, 0px 0px 5px cyan;
+    border: 3px solid black;
+}
+.about {
+    border: 3px solid black;
+    border-radius: 8px;
+    margin-top: 20px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px;
+    background: radial-gradient(purple, black);
+    box-shadow: 0px 0px 5px white, 0px 0px 5px cyan;
+}
+.about1 {
+    border: 3px solid black;
+    margin: 10px;
+    border-radius: 8px;
+    background: radial-gradient(purple, black);
+    box-shadow: 0px 0px 5px white, 0px 0px 5px cyan;
+}
+.skills {
+    border: 3px solid black;
+    margin-top: 10px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: auto auto auto;
+    border-radius: 8px;
+    background: radial-gradient(purple, black);
+    box-shadow: 0px 0px 5px white, 0px 0px 5px cyan;
+    text-align: center;
+}
+.skill{
+    border: 3px solid black;
+    margin: 10px;
+    border-radius: 8px;
+    background: radial-gradient(purple, black);
+}
+.skill:hover {
+    background: linear-gradient(to bottom, purple, black, purple);
+    color: purple;
+    box-shadow: 0px 0px 5px white, 0px 0px 5px cyan;
+}
+.contact {
+    border: 3px solid black;
+    margin-top: 10px;
+    border-radius: 8px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: auto auto;
+    background: radial-gradient(purple, black);
+    box-shadow: 0px 0px 5px white, 0px 0px 5px cyan;
+}
+.contact .number {
+    border: 3px solid black;
+    margin: 10px;
+    border-radius: 8px;
+    background: radial-gradient(purple, black);
+    
+}
+div.number:hover {
+    background: linear-gradient(to bottom, purple, black, purple);
+    color: purple;
+    box-shadow: 0px 0px 5px white, 0px 0px 5px cyan;
+}
+.contact .email {
+    border: 3px solid black;
+    margin: 10px;
+    border-radius: 8px;
+    background: radial-gradient(purple, black);
+    
+}
+div.email:hover {
+    background: linear-gradient(to bottom, purple, black, purple);
+    color: purple;
+    box-shadow: 0px 0px 5px white, 0px 0px 5px cyan;
+}
+.footer {
+    border: 3px solid black;
+    border-radius: 8px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    position: sticky;
+    bottom: 0;
+    background: radial-gradient(purple, black);
+    box-shadow: 0px 0px 5px white, 0px 0px 5px cyan;
+}
